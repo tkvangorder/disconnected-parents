@@ -1,5 +1,0 @@
----
-type: specs.openrewrite.org/v1beta/recipe
-name: com.example.RewriteDryRunIT.CodeCleanup
-recipeList:
-  - org.openrewrite.java.search.FindMissingTypes
