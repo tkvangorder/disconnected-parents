@@ -1,4 +1,4 @@
-package sample;
+package samplea;
 
 public interface MyInterface {
 }
