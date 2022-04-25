@@ -3,7 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.disconnected</groupId>
+    <parent>
+        <groupId>org.disconnected</groupId>
+        <artifactId>parent-a</artifactId>
+        <version>1.0</version>
+        <relativePath/>
+    </parent>
+
     <artifactId>parent-b</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
@@ -13,5 +19,19 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openrewrite.maven</groupId>
+                <artifactId>rewrite-maven-plugin</artifactId>
+                <version>4.23.0-SNAPSHOT</version>
+                <configuration>
+                    <activeRecipes>
+                        <recipe>org.openrewrite.java.search.FindMissingTypes</recipe>
+                    </activeRecipes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

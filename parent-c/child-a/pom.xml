@@ -5,12 +5,11 @@
 
     <parent>
         <groupId>org.disconnected</groupId>
-        <artifactId>parent-a</artifactId>
+        <artifactId>parent-b</artifactId>
         <version>1.0</version>
         <relativePath/>
     </parent>
 
-    <groupId>org.disconnected</groupId>
     <artifactId>child-a</artifactId>
 
 </project>

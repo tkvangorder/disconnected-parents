@@ -10,7 +10,6 @@
         <relativePath/>
     </parent>
 
-    <groupId>org.disconnected</groupId>
     <artifactId>child-b</artifactId>
 
     <dependencies>
