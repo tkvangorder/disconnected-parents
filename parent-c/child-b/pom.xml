@@ -7,7 +7,7 @@
         <groupId>org.disconnected</groupId>
         <artifactId>parent-b</artifactId>
         <version>1.0</version>
-        <relativePath/>
+        <relativePath>../../parent-b</relativePath>
     </parent>
 
     <artifactId>child-b</artifactId>
