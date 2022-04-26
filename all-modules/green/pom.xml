@@ -3,14 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.disconnected</groupId>
-    <artifactId>disconnected</artifactId>
-    <version>1.0</version>
-    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.disconnected</groupId>
+        <artifactId>green-parent</artifactId>
+        <version>1.0</version>
+        <relativePath>../../color-parent/green-parent</relativePath>
+    </parent>
 
-    <modules>
-        <module>color-parent</module>
-        <module>all-modules</module>
-    </modules>
+    <artifactId>green</artifactId>
 
 </project>

@@ -5,19 +5,20 @@
 
     <parent>
         <groupId>org.disconnected</groupId>
-        <artifactId>parent-b</artifactId>
+        <artifactId>blue-parent</artifactId>
         <version>1.0</version>
-        <relativePath>../../parent-b</relativePath>
+        <relativePath>../../color-parent/blue-parent</relativePath>
     </parent>
 
-    <artifactId>child-b</artifactId>
+    <artifactId>blue</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.disconnected</groupId>
-            <artifactId>child-a</artifactId>
+            <artifactId>green</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>
 
 </project>
+
